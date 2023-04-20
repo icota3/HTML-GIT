@@ -54,11 +54,11 @@ $(document).ready(function() {
       }
     });
   
-    // Allow only numbers and hyphens in Offerer number input
+    // Allow only numbers and - in Offerer number input
     $('#exampleFormControlInput3').on('keypress', function(e) {
       var key = e.key;
   
-      // Check if the key is not a number or a hyphen
+      // Check if the key is not a number or a -
       if (!(/[0-9-]/.test(key))) {
         e.preventDefault();
       }
