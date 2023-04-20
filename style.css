@@ -1,0 +1,171 @@
+/*element level cs selectors*/
+header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 999;
+}
+
+header nav {
+    padding: 12% 5%;
+    background-image: url('./images/background.jpg'); 
+    background-size:cover;
+}
+
+main {
+    padding-top: 5%;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-image: url('./images/background.jpg'); 
+    background-size:cover;
+}
+
+footer p {
+    margin: 5px 8%;
+}
+
+/*ids of the body elements of the pages*/
+#job_upload_form {
+    background-image: url("./images/background.jpg"); 
+    background-size:cover;
+}
+#register_form {
+    background-image: url('./images/background.jpg'); 
+    background-size:cover;
+}
+#cv_and_info {
+    background-image: url('./images/background.jpg'); 
+    background-size:cover;
+}
+
+/*class level css selectors*/
+.form {
+    width: 33%;
+}
+.image {
+    max-width: 50%;
+}
+.nav {
+    margin: 1% 5% 1% 5%;
+}
+.nav-item {
+    border: 2px solid #000080;
+    background:  #000033;
+}
+.card-header {
+    background-image: url('./images/background.jpg'); 
+    background-size:cover;
+}
+.page-link {
+    background: linear-gradient(to bottom, #000080,  #000033);
+}
+.form-container {
+    border: 2px solid black;
+    padding: 20px;
+    margin: 70px auto;
+    background-color: white;
+    border-radius: 15px;
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    
+    transition: all 2s ease-in-out;
+}
+.form-container.expand {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.checkbox {
+    display: inline-block;
+    margin-right: 15px;
+}
+.radio{
+    display: inline-block;
+    margin-right: 15px;
+}
+.app_header_div1 {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: white; 
+    z-index: 9999;
+}
+.app_header_div1 .hidden{
+    margin-left: auto;
+}
+.app_header_div2 {
+    padding-top: 50px;
+}
+.app_header_div2 nav{
+    height: 300px;
+}
+.app_header_div2 .navbar-brand {
+    padding-left: 100px; 
+    font-size: 55px;
+}
+.login_form_div {
+    padding-bottom: 25px;
+}
+.index_body_header_div {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: white; 
+    z-index: 9999;
+}
+.body_header_div2 {
+    padding-top: 50px;
+}
+.body_header_div2 nav {
+    height: 300px;
+}
+.body_header_div2 nav a {
+    padding-left: 150px; 
+    font-size: 25px;
+}
+.body_header_div2 nav form {
+    padding-left: 150px;
+}
+.body_header_div2 input {
+    width: 50%;
+}
+
+.body_header_div {
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    background-color: white; 
+    z-index: 9999;
+}
+.body_header_div .nav-item {
+    margin-left: 15px;
+}
+.body_header_div .hidden  {
+    margin-left: auto;
+}
+.card-header span {
+    font-size: 20px; 
+    color:white;
+}
+.container #za-poslodavce {
+    color: #053488; 
+    font-size: 50px; 
+    text-align: center; 
+    padding-top: 3%;
+}
+
+.invalid-input {
+    border: 1px solid red;
+  }
+
+  .valid-input {
+    border: 2px solid green;
+  }
+  
