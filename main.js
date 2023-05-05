@@ -1,24 +1,31 @@
+//Client-side form validation
+
+//function for invalid input field
 function shakeAndRedBorder(input) {
   if (input.id !== 'exampleFormControlInput3') {
     $(input).effect('shake', { times: 3, distance: 5 }, 500);
   }
   input.classList.add('invalid-input');
 }
-
+//remove red border if the input is valid
 function removeRedBorder(input) {
   input.classList.remove('invalid-input');
 }
-
+//add green border if the input is valid
 function addGreenBorder(input) {
   input.classList.add('valid-input');
 }
-
+//remove green border if the input is invalid
 function removeGreenBorder(input) {
   input.classList.remove('valid-input');
 }
+//defining event handlers
+
 $(document).ready(function() {
+  //HTML5 constraint validation - ValidityState
   $('#exampleFormControlInput1, #exampleFormControlInput2, #exampleFormControlInput3').on('input', function() {
     if (this.validity.valid) {
+      //calling the appropriate functions
       removeRedBorder(this);
       addGreenBorder(this);
     } else {
@@ -26,24 +33,24 @@ $(document).ready(function() {
       shakeAndRedBorder(this);
     }
   });
-
+//event handler before submit
   $('#job_form').on('submit', function(e) {
     e.preventDefault();
 
     let invalidInput = false;
-
+//for each input field- check validity
     $('#exampleFormControlInput1, #exampleFormControlInput2, #exampleFormControlInput3').each(function() {
       if (!this.validity.valid) {
         shakeAndRedBorder(this);
         invalidInput = true;
       }
     });
-
+//if not invalid, submit the form
     if (!invalidInput) {
       this.submit();
     }
   });
-
+//keypress event handler
   // Allow only numbers and - in Offerer number input
   $('#exampleFormControlInput3').on('keypress', function(e) {
     var key = e.key;
@@ -65,6 +72,7 @@ $(document).ready(function() {
     }
   });
 });
+//datepicker widget
 $(document).ready(function() {
   function setupDatepicker() {
     $("#birthdate").datepicker({
